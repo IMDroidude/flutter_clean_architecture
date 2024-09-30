@@ -1,9 +1,9 @@
 
 import 'package:flutter/widgets.dart';
 import 'package:flutter_clean_architecture/ui/error_screen.dart';
-import 'package:flutter_clean_architecture/ui/home_screen.dart';
-import 'package:flutter_clean_architecture/ui/login_screen.dart';
+import 'package:flutter_clean_architecture/ui/login/login_screen.dart';
 import 'package:flutter_clean_architecture/ui/profile_screen.dart';
+import 'package:flutter_clean_architecture/ui/splash/splash_screen.dart';
 import 'package:go_router/go_router.dart'; 
 
 
@@ -29,7 +29,7 @@ class AppRouter {
         GoRoute(
           path: root,
           name: 'home',
-          builder: (context, state) => const HomeScreen(),
+          builder: (context, state) => const SplashScreen(),
         ),
         GoRoute(
           path: loginScreen,
