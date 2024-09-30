@@ -23,7 +23,7 @@ class AppRouter {
 
   // Method to return the configured GoRouter instance
   static final GoRouter _router = GoRouter(
-      ///initialLocation: root,
+      initialLocation: root,
       navigatorKey: _rootNavigatorKey, // Using the root navigator key
       routes: <GoRoute>[
         GoRoute(
@@ -47,13 +47,12 @@ class AppRouter {
       ],
       errorBuilder: (context, state) => const ErrorScreen(),
       debugLogDiagnostics: true,
-      onException: (BuildContext ctx, GoRouterState state, GoRouter router) {
-      // String parent = state.uri.pathSegments.first;
-      // if (kDebugMode) {
-      //   print("onException::${state.uri}==============");
-      // }
-      // router.go('/$parent/404', extra: state.uri.toString());
-    }, 
+    //   onException: (BuildContext ctx, GoRouterState state, GoRouter router) {
+    //   String parent = state.uri.pathSegments.first;
+    //   if (kDebugMode) {
+    //     print("onException::${state.uri}==============");
+    //   }
+    //   router.go('/$parent/404', extra: state.uri.toString());
+    // }, 
     );
-  
   }

@@ -18,9 +18,9 @@ class MyApp extends StatelessWidget {
           child: MaterialApp.router(
             theme: ThemeManager.themeData, // Move this here
             routerConfig: AppRouter.router,
-            routeInformationParser: AppRouter.router.routeInformationParser,
-            ///routeInformationProvider: AppRouter.router.routeInformationProvider,
-            routerDelegate: AppRouter.router.routerDelegate,
+            // routeInformationParser: AppRouter.router.routeInformationParser,
+            // routeInformationProvider: AppRouter.router.routeInformationProvider,
+            // routerDelegate: AppRouter.router.routerDelegate,
           ),
         );
       },
