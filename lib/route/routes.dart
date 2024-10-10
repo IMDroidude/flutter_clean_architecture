@@ -1,5 +1,6 @@
 
 import 'package:flutter/widgets.dart';
+import 'package:flutter_clean_architecture/ui/dashboard/dashboard_screen.dart';
 import 'package:flutter_clean_architecture/ui/error_screen.dart';
 import 'package:flutter_clean_architecture/ui/login/login_screen.dart';
 import 'package:flutter_clean_architecture/ui/profile_screen.dart';
@@ -11,6 +12,7 @@ class AppRouter {
 
   static const root = '/';
   static const loginScreen = '/login';
+  static const dashboardScreen = '/dashboard';
   static const signUpScreen = '/signUp';
   static const setNewPasswordScreen = '/setNewPassword';
 
@@ -35,6 +37,11 @@ class AppRouter {
           path: loginScreen,
           name: 'login',
           builder: (context, state) => const LoginScreen(),
+        ),
+        GoRoute(
+          path: dashboardScreen,
+          name: 'dashboard',
+          builder: (context, state) => const DashboardScreen(),
         ),
         GoRoute(
           path: '/profile/:userId',
