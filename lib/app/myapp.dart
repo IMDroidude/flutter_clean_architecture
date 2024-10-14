@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       designSize: const Size(390, 844),
       builder: (context, child) {
         return GestureDetector(
-          onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
+          onTap: () => FocusManager.instance.primaryFocus?.unfocus(),// hide keyboard on focus change
           child: MaterialApp.router(
             theme: ThemeManager.themeData, // Move this here
             routerConfig: AppRouter.router,
